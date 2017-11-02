@@ -2,7 +2,7 @@
 
 2nd November 2018 Changes
 
-Login completed. Database connected. 
+- Login completed. Database connected. 
 
 Need to do; 
 
