@@ -31,16 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.player_namem = new System.Windows.Forms.Label();
             this.score_l = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.m_card = new System.Windows.Forms.PictureBox();
+            this.image_card = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.m_card)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.popularity_indicator = new System.Windows.Forms.PictureBox();
+            this.wealth_indicator = new System.Windows.Forms.PictureBox();
+            this.Wealth_label = new System.Windows.Forms.Label();
+            this.Popularity_label = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.image_card)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popularity_indicator)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wealth_indicator)).BeginInit();
             this.SuspendLayout();
             // 
             // player_namem
@@ -67,25 +68,14 @@
             this.score_l.TabIndex = 1;
             this.score_l.Text = "0";
             // 
-            // label3
+            // image_card
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(101, 84);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "image_description";
-            // 
-            // m_card
-            // 
-            this.m_card.Image = ((System.Drawing.Image)(resources.GetObject("m_card.Image")));
-            this.m_card.Location = new System.Drawing.Point(53, 220);
-            this.m_card.Name = "m_card";
-            this.m_card.Size = new System.Drawing.Size(260, 260);
-            this.m_card.TabIndex = 3;
-            this.m_card.TabStop = false;
+            this.image_card.Image = ((System.Drawing.Image)(resources.GetObject("image_card.Image")));
+            this.image_card.Location = new System.Drawing.Point(53, 101);
+            this.image_card.Name = "image_card";
+            this.image_card.Size = new System.Drawing.Size(260, 380);
+            this.image_card.TabIndex = 3;
+            this.image_card.TabStop = false;
             // 
             // button1
             // 
@@ -93,7 +83,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(17, 220);
+            this.button1.Location = new System.Drawing.Point(17, 221);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(38, 260);
             this.button1.TabIndex = 4;
@@ -107,7 +97,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(309, 220);
+            this.button2.Location = new System.Drawing.Point(309, 221);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(38, 260);
             this.button2.TabIndex = 5;
@@ -127,21 +117,49 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // pictureBox2
+            // popularity_indicator
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(53, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
+            this.popularity_indicator.BackColor = System.Drawing.Color.Transparent;
+            this.popularity_indicator.Image = global::DogeConsultancyTest.Properties.Resources.empty_bar;
+            this.popularity_indicator.Location = new System.Drawing.Point(53, 1);
+            this.popularity_indicator.Name = "popularity_indicator";
+            this.popularity_indicator.Size = new System.Drawing.Size(50, 50);
+            this.popularity_indicator.TabIndex = 7;
+            this.popularity_indicator.TabStop = false;
+            this.popularity_indicator.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox3
+            // wealth_indicator
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(238, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(51, 50);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
+            this.wealth_indicator.BackColor = System.Drawing.Color.Transparent;
+            this.wealth_indicator.Image = global::DogeConsultancyTest.Properties.Resources.empty_bar;
+            this.wealth_indicator.Location = new System.Drawing.Point(263, 1);
+            this.wealth_indicator.Name = "wealth_indicator";
+            this.wealth_indicator.Size = new System.Drawing.Size(50, 50);
+            this.wealth_indicator.TabIndex = 8;
+            this.wealth_indicator.TabStop = false;
+            this.wealth_indicator.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // Wealth_label
+            // 
+            this.Wealth_label.AutoSize = true;
+            this.Wealth_label.BackColor = System.Drawing.Color.Transparent;
+            this.Wealth_label.ForeColor = System.Drawing.Color.White;
+            this.Wealth_label.Location = new System.Drawing.Point(267, 52);
+            this.Wealth_label.Name = "Wealth_label";
+            this.Wealth_label.Size = new System.Drawing.Size(41, 13);
+            this.Wealth_label.TabIndex = 10;
+            this.Wealth_label.Text = "Wealth";
+            // 
+            // Popularity_label
+            // 
+            this.Popularity_label.AutoSize = true;
+            this.Popularity_label.BackColor = System.Drawing.Color.Transparent;
+            this.Popularity_label.ForeColor = System.Drawing.Color.White;
+            this.Popularity_label.Location = new System.Drawing.Point(51, 52);
+            this.Popularity_label.Name = "Popularity_label";
+            this.Popularity_label.Size = new System.Drawing.Size(53, 13);
+            this.Popularity_label.TabIndex = 11;
+            this.Popularity_label.Text = "Popularity";
             // 
             // Form2
             // 
@@ -150,21 +168,22 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(359, 629);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.Popularity_label);
+            this.Controls.Add(this.Wealth_label);
+            this.Controls.Add(this.wealth_indicator);
+            this.Controls.Add(this.popularity_indicator);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.score_l);
             this.Controls.Add(this.player_namem);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.m_card);
+            this.Controls.Add(this.image_card);
             this.Name = "Form2";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.m_card)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.image_card)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popularity_indicator)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wealth_indicator)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,13 +192,14 @@
         #endregion
 
         private System.Windows.Forms.Label score_l;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox m_card;
+        private System.Windows.Forms.PictureBox image_card;
         private System.Windows.Forms.Label player_namem;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox popularity_indicator;
+        private System.Windows.Forms.PictureBox wealth_indicator;
+        private System.Windows.Forms.Label Wealth_label;
+        private System.Windows.Forms.Label Popularity_label;
     }
 }
