@@ -1,6 +1,6 @@
 # CMP307_Portfolio
 
-2nd November 2018 Changes
+# 2nd November 2017 Changes
 
 - Login completed. Database connected. 
 
@@ -13,3 +13,16 @@ Need to do;
 - Fill database
 - Admin page
 - Admin page allowing for people to fill database themselves 
+
+# 7th November 2017 Changes
+
+- Database is filled
+- Admin page created
+- 30 minute time limit made
+
+Need to do; 
+
+- Need to add code on Admin page to allow admin only users to create and remove scenarios/descriptions
+- Random Number Generator no dublicate numbers from pulling information from Database
+- Send data to the database (score)
+- End when score goes to 0 
