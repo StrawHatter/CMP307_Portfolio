@@ -1,5 +1,6 @@
 # CMP307_Portfolio
 
+Uploaded updated file in mk2 folder - James
 # 2nd November 2017 Changes
 
 - Login completed. Database connected. 
