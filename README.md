@@ -30,4 +30,4 @@ Need to do;
 # 9th November 2017 Changes
 
 - Timer issue fixed
-- 
+- Removed the idea of using a random number generation in order to make the program simpler to run
