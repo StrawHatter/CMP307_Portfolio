@@ -16,7 +16,7 @@ Need to do;
 
 # 7th November 2017 Changes
 
-- Database is filled
+- Part of Database is filled
 - Admin page created
 - 30 minute time limit made
 
@@ -26,3 +26,8 @@ Need to do;
 - Random Number Generator no dublicate numbers from pulling information from Database
 - Send data to the database (score)
 - End when score goes to 0 
+
+# 9th November 2017 Changes
+
+- Timer issue fixed
+- 
