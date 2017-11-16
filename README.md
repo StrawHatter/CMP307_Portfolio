@@ -3,7 +3,7 @@
 Uploaded updated file in mk2 folder - James
 # 2nd November 2017 Changes
 
-- Login completed. Database connected. 
+- Login completed. Database connected
 
 Need to do; 
 
@@ -32,3 +32,7 @@ Need to do;
 
 - Timer issue fixed
 - Removed the idea of using a random number generation in order to make the program simpler to run
+
+# 16th November 2017 Changes
+
+- Program completed, just need to sort out the repo
