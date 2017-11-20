@@ -1,0 +1,10 @@
+E:\Year 3\Semester 1\Software Engineering Practice\DogeConsultancyTest\DogeConsultancyTest\bin\Debug\DogeConsultancyTest.exe.config
+E:\Year 3\Semester 1\Software Engineering Practice\DogeConsultancyTest\DogeConsultancyTest\bin\Debug\DogeConsultancyTest.exe
+E:\Year 3\Semester 1\Software Engineering Practice\DogeConsultancyTest\DogeConsultancyTest\bin\Debug\DogeConsultancyTest.pdb
+E:\Year 3\Semester 1\Software Engineering Practice\DogeConsultancyTest\DogeConsultancyTest\obj\Debug\DogeConsultancyTest.csprojResolveAssemblyReference.cache
+E:\Year 3\Semester 1\Software Engineering Practice\DogeConsultancyTest\DogeConsultancyTest\obj\Debug\DogeConsultancyTest.Form1.resources
+E:\Year 3\Semester 1\Software Engineering Practice\DogeConsultancyTest\DogeConsultancyTest\obj\Debug\DogeConsultancyTest.Properties.Resources.resources
+E:\Year 3\Semester 1\Software Engineering Practice\DogeConsultancyTest\DogeConsultancyTest\obj\Debug\DogeConsultancyTest.csproj.GenerateResource.Cache
+E:\Year 3\Semester 1\Software Engineering Practice\DogeConsultancyTest\DogeConsultancyTest\obj\Debug\DogeConsultancyTest.exe
+E:\Year 3\Semester 1\Software Engineering Practice\DogeConsultancyTest\DogeConsultancyTest\obj\Debug\DogeConsultancyTest.pdb
+E:\Year 3\Semester 1\Software Engineering Practice\DogeConsultancyTest\DogeConsultancyTest\obj\Debug\DogeConsultancyTest.Form2.resources
