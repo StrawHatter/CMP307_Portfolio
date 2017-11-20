@@ -44,17 +44,7 @@ namespace DogeConsultancyTest
             SqlDataReader dataR;
             dataR = Command.ExecuteReader();
 
-            //   while (dataR.Read())
-            //     {
-            // System.Diagnostics.Debug.WriteLine(dataR[2].ToString());
-            //       }
             dataR.Close();
-
-
-            //  string pinsertStatement = "INSERT INTO dbo.customers(firstname, surname) VALUES('test','test')";
-            // SqlCommand pinsertCommand = new SqlCommand(pinsertStatement, conn);
-            //
-            //         pinsertCommand.ExecuteNonQuery();
 
 
 
