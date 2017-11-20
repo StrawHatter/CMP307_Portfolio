@@ -59,15 +59,5 @@ namespace DogeConsultancyTest.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap empty_bar {
-            get {
-                object obj = ResourceManager.GetObject("empty-bar", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
