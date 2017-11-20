@@ -74,14 +74,6 @@ namespace DogeConsultancyTest
             {
                 MessageBox.Show("Incorrect Username or Password");
             }
-           // SqlDataReader dataR;
-           // dataR = Command.ExecuteReader();
-
-            //   while (dataR.Read())
-            //     {
-            // System.Diagnostics.Debug.WriteLine(dataR[2].ToString());
-            //       }
-            //dataR.Close();
 
 
 
