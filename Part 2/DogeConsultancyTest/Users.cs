@@ -34,11 +34,26 @@ namespace DogeConsultancyTest
                 unhashed = Password.Text;
                 bool insert = false;
                 bool exists;
-                
+                bool usercheck;
+                int int1;
+                int adminuser = 0;
+
+                usercheck = Int32.TryParse(Username.Text, out int1);
+                if (usercheck == false)
+                {
+                    //prevents conflicting data types when checking for existing users in case a string is entered in the user box
+                    adminuser = 0;
+                }
+                else if (usercheck == true)
+                {
+                    //allows the parsing of username after checking that it's an int
+                    adminuser = Int32.Parse(Username.Text);
+                }
+
                 //checks to see if user already exists in database
                 string loginSelect = "Select * from dbo.DogeUsers where Username = @username;";
                 SqlCommand sqlcmd2 = new SqlCommand(loginSelect);
-                sqlcmd2.Parameters.AddWithValue("@username", Username.Text);
+                sqlcmd2.Parameters.AddWithValue("@username", adminuser);
 
 
 

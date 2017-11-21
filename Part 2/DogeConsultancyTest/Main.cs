@@ -130,7 +130,7 @@ namespace DogeConsultancyTest
         }
 
 
-        private void yes_button_Click(object sender, EventArgs e)
+        private void yes_button_Click(object sender, EventArgs e)//left hand button
         {
             //update the popualarity, earnings and total score variables
             Globals.score = Globals.score + Globals.popy;
@@ -242,7 +242,7 @@ namespace DogeConsultancyTest
         }
 
 
-        private void no_button_Click(object sender, EventArgs e)
+        private void no_button_Click(object sender, EventArgs e) //right hand button
         {
             //update the popualarity, earnings and total score variables
             Globals.score = Globals.score + Globals.wealthy;
